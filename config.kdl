@@ -31,7 +31,7 @@ keybinds clear-defaults=true {
                 floating true
                 move_to_focused_tab true
                 cwd "/"
-                root_dirs "/Users/bhavy/Documents/GitHub/"
+                root_dirs "/Users/bhavy/Documents/GitHub/;/Users/bhavanvirrai/Documents/GitHub/"
             }; SwitchToMode "Locked";
         }
     }
