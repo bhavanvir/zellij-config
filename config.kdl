@@ -27,13 +27,6 @@ keybinds clear-defaults=true {
         bind "s" { NewPane "stacked"; SwitchToMode "normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
-        bind "g" { LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij-sessionizer.wasm" {
-                floating true
-                move_to_focused_tab true
-                cwd "/"
-                root_dirs "/Users/bhavy/Documents/GitHub/;/Users/bhavanvirrai/Documents/GitHub/"
-            }; SwitchToMode "Locked";
-        }
     }
     tab {
         bind "left" { GoToPreviousTab; }
@@ -142,6 +135,13 @@ keybinds clear-defaults=true {
                 move_to_focused_tab true
             }
             SwitchToMode "normal"
+        }
+        bind "g" { LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij-sessionizer.wasm" {
+                floating true
+                move_to_focused_tab true
+                cwd "/"
+                root_dirs "/Users/bhavy/Documents/GitHub/;/Users/bhavanvirrai/Documents/GitHub/"
+            }; SwitchToMode "Locked";
         }
     }
     shared_except "locked" {
